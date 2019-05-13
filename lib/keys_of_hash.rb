@@ -1,9 +1,9 @@
  class Hash
   def keys_of(*arguments)
    array = []
-		self.each { |animal, place|
-			if arguments.include?(place)
-				animals << animal
+		self.each { |key, value|
+			if arguments.include?(value)
+				array << key
 			end
 		}
-		return animals
+		return array

@@ -5,7 +5,7 @@
    array = []
 		self.each do |key, value|
 		  binding.pry
-			if value == arguments
+			if arguments.include?(value)
 				array << key
 			end
 		end

@@ -5,5 +5,6 @@
 			if arguments.include?(value)
 				array << key
 			end
-		}
+		end
 		return array
+		end
